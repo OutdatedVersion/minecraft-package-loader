@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.8",
+    "@types/node": "^20.3.3",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "minecraft-protocol": "^1.43.1",
+    "mineflayer": "^4.10.0",
+    "prismarine-nbt": "^2.2.1",
+    "vec3": "^0.1.8"
+  }
+}

@@ -1,0 +1,163 @@
+[
+  {
+    "name": "settings",
+    "state": "play",
+    "data": {
+      "locale": "en_us",
+      "viewDistance": 12,
+      "chatFlags": 0,
+      "chatColors": true,
+      "skinParts": 127,
+      "mainHand": 1,
+      "enableTextFiltering": false,
+      "enableServerListing": true
+    }
+  },
+  {
+    "name": "custom_payload",
+    "state": "play",
+    "data": {
+      "channel": "minecraft:brand",
+      "data": { "type": "Buffer", "data": [6, 102, 97, 98, 114, 105, 99] }
+    }
+  },
+  {
+    "name": "custom_payload",
+    "state": "play",
+    "data": {
+      "channel": "minecraft:register",
+      "data": {
+        "type": "Buffer",
+        "data": [
+          99, 111, 110, 116, 114, 111, 108, 105, 102, 121, 58, 118, 105, 98,
+          114, 97, 116, 101, 95, 102, 114, 111, 109, 95, 111, 114, 105, 103,
+          105, 110, 0, 102, 97, 98, 114, 105, 99, 58, 99, 111, 110, 116, 97,
+          105, 110, 101, 114, 47, 111, 112, 101, 110, 0, 99, 111, 110, 116, 114,
+          111, 108, 105, 102, 121, 58, 118, 105, 98, 114, 97, 116, 105, 111,
+          110, 0, 99, 111, 110, 116, 114, 111, 108, 105, 102, 121, 58, 118, 105,
+          98, 114, 97, 116, 101, 95, 102, 114, 111, 109, 95, 101, 110, 116, 105,
+          116, 121, 0, 102, 97, 98, 114, 105, 99, 58, 114, 101, 103, 105, 115,
+          116, 114, 121, 47, 115, 121, 110, 99, 47, 100, 105, 114, 101, 99, 116,
+          0, 99, 111, 110, 116, 114, 111, 108, 105, 102, 121, 58, 114, 101, 97,
+          99, 104, 95, 97, 114, 111, 117, 110, 100, 95, 112, 111, 108, 105, 99,
+          121, 0, 102, 97, 98, 114, 105, 99, 45, 115, 99, 114, 101, 101, 110,
+          45, 104, 97, 110, 100, 108, 101, 114, 45, 97, 112, 105, 45, 118, 49,
+          58, 111, 112, 101, 110, 95, 115, 99, 114, 101, 101, 110
+        ]
+      }
+    }
+  },
+  { "name": "teleport_confirm", "state": "play", "data": { "teleportId": 1 } },
+  {
+    "name": "position_look",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "yaw": 0.03381943702697754,
+      "pitch": 41.249935150146484,
+      "onGround": false
+    }
+  },
+  { "name": "held_item_slot", "state": "play", "data": { "slotId": 3 } },
+  {
+    "name": "position_look",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "yaw": 0.03381943702697754,
+      "pitch": 41.249935150146484,
+      "onGround": false
+    }
+  },
+  { "name": "flying", "state": "play", "data": { "onGround": true } },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  {
+    "name": "block_place",
+    "state": "play",
+    "data": {
+      "hand": 0,
+      "location": { "x": -31, "z": -13, "y": 71 },
+      "direction": 1,
+      "cursorX": 0.5713480710983276,
+      "cursorY": 0.875,
+      "cursorZ": 0.2976735830307007,
+      "insideBlock": false,
+      "sequence": 1
+    }
+  },
+  { "name": "arm_animation", "state": "play", "data": { "hand": 0 } },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  { "name": "close_window", "state": "play", "data": { "windowId": 1 } },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  },
+  {
+    "name": "position",
+    "state": "play",
+    "data": {
+      "x": -30.42816320365273,
+      "y": 71,
+      "z": -13.551890654478848,
+      "onGround": true
+    }
+  }
+]

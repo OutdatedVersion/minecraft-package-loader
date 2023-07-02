@@ -1,0 +1,18 @@
+[
+  { "name": "teleport_confirm", "state": "play", "data": { "teleportId": 1 } },
+  {
+    "name": "block_place",
+    "state": "play",
+    "data": {
+      "hand": 0,
+      "location": { "x": -31, "z": -13, "y": 71 },
+      "direction": 1,
+      "cursorX": 0.5403679609298706,
+      "cursorY": 0.875,
+      "cursorZ": 0.1885908544063568,
+      "insideBlock": false,
+      "sequence": 1
+    }
+  },
+  { "name": "arm_animation", "state": "play", "data": { "hand": 0 } }
+]
