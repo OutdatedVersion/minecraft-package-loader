@@ -65,6 +65,19 @@ lets this simply stitch together some packages and patch a resolution quirk. ðŸ’
     Welcome to 2023, Cooper!
     ```
 
+## Pros
+
+- Enforce read and write policies with iron doors and a redstone lock!
+- Signed books are immutable and traceable by default!
+- Genuine team building built right into the release process!
+
+## Cons
+
+- Books may be lost without invader and blast proof entrances
+
+  ![Part 1](./docs/assets/part-1.jpg)
+  ![Part 2](./docs/assets/part-2.jpg)
+
 ## Wishlist
 
 - npm compatible registry so the consumer doesn't need any non-standard dependencies
