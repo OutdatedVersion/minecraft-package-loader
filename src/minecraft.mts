@@ -1,16 +1,28 @@
 import mineflayer from 'mineflayer';
 import { TagType, type List } from 'prismarine-nbt';
+// @ts-expect-error
 import vec3 from 'vec3';
 import { setTimeout } from 'timers/promises';
 import { Tags } from 'prismarine-nbt';
 import debug from 'debug';
+import { z } from 'zod';
+
+const envSchema = z.object({
+  MINECRAFT_HOST: z.string(),
+  MINECRAFT_PORT: z.string().transform((x) => parseInt(x, 10)),
+  MINECRAFT_USERNAME: z.string(),
+  MINECRAFT_CHEST_X: z.string().transform((x) => parseInt(x, 10)),
+  MINECRAFT_CHEST_Y: z.string().transform((x) => parseInt(x, 10)),
+  MINECRAFT_CHEST_Z: z.string().transform((x) => parseInt(x, 10)),
+});
+const env = envSchema.parse(process.env);
 
 const log = debug('loader:minecraft');
 
 const bot = mineflayer.createBot({
-  host: '127.0.0.1',
-  port: 25565,
-  username: 'idk',
+  host: env.MINECRAFT_HOST,
+  port: env.MINECRAFT_PORT,
+  username: env.MINECRAFT_USERNAME,
   auth: 'offline',
 });
 
@@ -44,13 +56,18 @@ export const getPackage = async (name: string) => {
 };
 
 bot.on('spawn', async () => {
-  let block = bot.blockAt(vec3(-382, 68, -77));
+  const loc = vec3(
+    env.MINECRAFT_CHEST_X,
+    env.MINECRAFT_CHEST_Y,
+    env.MINECRAFT_CHEST_Z
+  );
+  let block = bot.blockAt(loc);
   while (!block) {
-    log('Block state not yet available. Trying again soon..');
+    log('Block state not yet available. Trying again soon..', loc);
     await setTimeout(10);
-    block = bot.blockAt(vec3(-382, 68, -77));
+    block = bot.blockAt(loc);
   }
-  log('Block state available');
+  log('Block state available', loc);
 
   const chest = await bot.openContainer(block);
 
