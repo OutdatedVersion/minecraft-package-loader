@@ -83,7 +83,10 @@ bot.on('spawn', async () => {
       const firstPage = JSON.parse(pages[0]).text as string;
       const idx = firstPage.indexOf('\n');
       const version = firstPage.substring(0, idx).trim();
-      const source = firstPage.substring(idx).trim();
+      const source = pages.slice(1).reduce((s, page) => {
+        s += '\n' + (JSON.parse(page).text as string).trim();
+        return s;
+      }, firstPage.substring(idx).trim());
 
       const pkg = {
         name: book.title.value,
